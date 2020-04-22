@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -23,6 +24,7 @@ import { PostListComponent } from './posts/post-list/post-list.component';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
