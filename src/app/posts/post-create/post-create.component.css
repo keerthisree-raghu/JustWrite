@@ -8,8 +8,13 @@ textarea {
 
 button {
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 mat-spinner {
     margin: auto;
+}
+
+input[type="file"] {
+    visibility: hidden;
 }
