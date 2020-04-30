@@ -4,11 +4,16 @@
 }
 
 .info-text {
+    margin-top: 3rem;
     text-align: center;
 }
 
 mat-spinner {
     margin: auto;
+}
+
+mat-paginator {
+    margin-top: 1rem;
 }
 
 .post-image {
