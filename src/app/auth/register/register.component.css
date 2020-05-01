@@ -1,0 +1,19 @@
+mat-card {
+    margin-top: 3rem;
+}
+
+mat-card-title {
+    margin-bottom: 1rem;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+mat-spinner {
+    margin: auto;
+}
+
+button {
+    margin-top: 1rem;
+}
