@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit, OnDestroy {
             return;
         }
         this.isLoading = true;
+        // Obtain login credentials from front-end
         this.authService.login(form.value.email, form.value.password);
     }
 

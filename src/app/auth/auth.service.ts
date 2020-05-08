@@ -44,6 +44,7 @@ export class AuthService {
     }
 
     login(email: string, password: string) {
+        // Object which is passed to the backend, obtained from the auth-data model
         const authData: AuthData = { email: email, password: password };
         this.http.
         post<{ token: string, expiresIn: number, userId: string }>(
@@ -61,7 +62,6 @@ export class AuthService {
                     this.authStatusListener.next(true);
                     const now = new Date();
                     const expirationDate = new Date(now.getTime() + expiresInDuration * 1000);
-                    console.log(expirationDate);
                     this.saveAuthData(token, expirationDate, this.userId); 
                     this.router.navigate(['/']);
                 }

@@ -26,6 +26,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
             return;
         }
         this.isLoading = true;
+        // Obtains the necessary data from the front-end
         this.authService.createUser(form.value.email, form.value.password);
     }
 
