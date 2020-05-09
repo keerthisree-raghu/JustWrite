@@ -10,7 +10,7 @@ const app = express();
 
 mongoose
   .connect(
-    "mongodb+srv://keerthi:6zOjR277h2siURRi@justwrite-cluster-ot9en.mongodb.net/just-write?retryWrites=true&w=majority",
+    "mongodb+srv://keerthi:" + process.env.MONGO_ATLAS_PASSWORD + "@justwrite-cluster-ot9en.mongodb.net/just-write?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {
@@ -23,7 +23,7 @@ mongoose
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use("/images", express.static(path.join("backend/images")));
+app.use("/images", express.static(path.join("images")));
 
 app.use((req, res, next) => {
   res.setHeader(

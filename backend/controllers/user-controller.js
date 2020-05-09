@@ -1,5 +1,5 @@
 // Encryption package
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 // JSON Web Token package
 const jwt = require("jsonwebtoken");
 
@@ -57,7 +57,7 @@ exports.userLogin = (req, res, next) => {
             // jwt.sign(input data of your choice, password/secret, configuration)
             const token = jwt.sign(
                 { email: fetchedUser.email, userId: fetchedUser._id },
-                "a_very_long_secret_string_of_some_sort",
+                process.env.JWT_SECRET,
                 { expiresIn: '1h' }
             );
             // After successful authentication
