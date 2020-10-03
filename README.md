@@ -1,27 +1,41 @@
 # JustWrite
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+JustWrite is a blogging application created using the MEAN stack as part of the [Mean Stack Course](https://www.udemy.com/course/angular-2-and-nodejs-the-practical-guide/) by Maximilian Schwarzmüller.
 
-## Development server
+## Prerequisites
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Before setting up the project, ensure that you have the following prerequisites set up on your local system.
 
-## Code scaffolding
+* Current LTS version of [Node](https://nodejs.org/en/)
+* [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1
+* [MongoDB Cloud](https://www.mongodb.com/cloud) Account
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+### Clone the Repository
+
+Create and navigate into a new directory anywhere on your file system through the command line. Then, run the following command.
+
+```shell
+git clone https://github.com/keerthisree-raghu/JustWrite.git
+```
+
+### Install Dependencies
+
+Navigate to the project folder in your terminal and run the following command.
+
+```shell
+npm install
+```
+
+## Usage
+
+### Development Server
+
+Navigate into the `backend` folder and run `node server.js` to start the backend server. Keep this server running while running the frontend development server.
+
+Run `ng serve` from the root folder for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
